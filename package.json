@@ -1,0 +1,52 @@
+{
+  "name": "eslint-plugin-whitespaced",
+  "version": "1.0.0",
+  "description": "ESLint plugin that enforces whitespaced formatting in JavaScript code",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuomashatakka/eslint-plugin-whitespaced.git"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "mocha --require tests/mocha.js tests/lib/rules/block-padding.js",
+    "test:all": "mocha --require tests/mocha.js tests/lib/rules/*.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "python",
+    "style",
+    "formatting"
+  ],
+  "author": "tuomashatakka",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "lib/**/*.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.0.0",
+    "@types/mocha": "^10.0.10",
+    "eslint": "^8.56.0",
+    "mocha": "^10.8.2",
+    "typescript": "^5.0.0"
+  }
+}

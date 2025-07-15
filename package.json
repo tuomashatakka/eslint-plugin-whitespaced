@@ -7,7 +7,7 @@
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tuomashatakka/eslint-plugin-whitespaced.git"
+    "url": "git+https://github.com/tuomashatakka/eslint-plugin-whitespaced.git"
   },
   "exports": {
     ".": {
